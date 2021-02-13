@@ -1,5 +1,5 @@
 <?php
-include_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti/controller/AboutUsController.php');
+include_once ($_SERVER['DOCUMENT_ROOT'].'/ProjektiF/controller/aboutUsController.php');
 if (isset($_POST['submitB'])) {
     
     $comment= $_POST['w3review'];
@@ -15,7 +15,7 @@ class InsertView
     
              
         // dergojme kerkesen ne controller
-        $abouText = new aboutUs($comment);
+        $abouText = new AboutUs($comment);
         $controller = new AboutUsController();
         $response = $controller->InsertKoment($abouText);
 
@@ -25,7 +25,7 @@ class InsertView
 
 echo '<script type="text/javascript">'; 
 echo 'alert("Comment send!");'; 
-echo 'window.location.href = "../home.php";';
+echo 'window.location.href = "../home.html";';
 echo '</script>';
 
 
@@ -40,7 +40,7 @@ echo '</script>';
 
 echo '<script type="text/javascript">'; 
 echo 'alert("Comment Failed!");'; 
-echo 'window.location.href = "../home.php";';
+echo 'window.location.href = "../home.html";';
 echo '</script>';
 
 
