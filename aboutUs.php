@@ -7,18 +7,7 @@
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
     <body>
-        <div class="navbar">
-           
-            <nav class="stroke">
-              <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="aboutUs.html">About Us</a></li>
-                <li><a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
-                
-              </ul>
-            </nav>
-          </div>
+        <?php include 'menu.php';?>
           <div class="body">
               <h1 style="font-size: 35px;"> About Fashion Glam </h1>
               <h5 > Everything you waned to know about us</h5>
@@ -80,57 +69,8 @@
           </div>
         </div>
           <script src="js/aboutus.js"></script>
-          <footer>
-                      
-            <div class="footer-elements">
-              <div class="footer logo">
-                <img  style="width: 150px;height: 150px; padding-top: 20px;" src="images/bagicon.png">
-          
-              </div>
-            <div class="footer explore">
-              <h2 class="footer-heading" >Explore</h2>
-              
-              <ul>
-                
-                <li> <a href="home.html" >Home</a></li>
-                <li><a href="#" >Products</a></li>
-                <li><a href="aboutUs.html" >About Us</a></li>
-                
-              </ul>
-        
-            </div>
-            <div class="footer info">
-              <h2 class="footer-heading">Visit Us</h2>
-                
-              <ul>  
-                <li></i>Autostrada Tiranë - Elbasan, Tiranë</li>
-                <li></i> Rr. Agim Ramadani, Prishtine</li>
-                </ul>
-            </div>
-                <div class="footer contact">
-                <h2 class="footer-heading">Contact Us</h2>
-                  <ul>
-                <li> +355 4 418-640</li>
-                <li> +383 44 202-472</li>
-                <li> google@gmail.com</li>
-               </ul>
-            </div>
-              <div class="footer follow">
-                <h2 class="footer-heading">Follow us</h2>
-                 
-                <ul>
-              
-                  <li><i class="fab fa-facebook"></i>Fashion Fab</li>
-                  <li><i class="fab fa-instagram"></i>FashionFab</li>
-                        
-                </ul>
-            </div>
-        
-            </div>
-           <p style="padding-left: 105px; font-weight: bolder;"> @2020 All Right Reserved.</p> 
-          </div>
-         
-          </footer>
+          <?php include 'footer.php';?>
 
     </body>
 </html>
+
