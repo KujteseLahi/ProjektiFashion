@@ -25,33 +25,33 @@
                 
                 <nav>
                   <ul class="menu-links">
-                    <li>Albania, AL</a><span id="AL-info">
+                    <li><a href="###">Albania, AL</a><span id="AL-info">
                       <p>+355 4 418-640</p>
                     </span>
                     </li>
                     
-                    <li><a href="#">Home</a>
+                    <li><a href="productClient.php">New Collection</a>
                      
                     </li>
-                    <li><a href="#">
-                      Products
+                    <li><a href="productClient.php">
+                      Special Prices
                     </a></li>
-                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="productClient.php">Shoes&Bags</a></li>
                   </ul>
                    <ul class="menu-links">
-                               <li><a href="#">Kosova, XK</a>
+                               <li><a href="###">Kosova, XK</a>
                                  <span id="XK-info">
                       <p>+383 44 202-472</p>
                     </span>
                   </li>
           
-                    <li><a href="#">Home</a>
+                    <li><a href="productClient.php">New Collection</a>
                     
                     </li>
-                    <li ><a href="#">
-                      Products          
+                    <li ><a href="productClinet.php">
+                      Special Prices           
                       </a></li>
-                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="productClient.php">Shoes&Bags</a></li>
                   </ul>
                 </div>
             
@@ -82,15 +82,15 @@
                           <div class="second-items">
                             <div id="item1 " class="second-item">
                               <img class="image-second" src="images/q1.png">
-                              <div class="middle">
-                                <div class="text">Price </div>
+                              <div class="middle"  href="page.php">
+                                <div class="text" href="page.php">Buy<a  href="page2.php"></div>
                               </div> 
                             
                             </div>
                             <div id="item2 " class="second-item">
                               <img class="image-second" src="images/c5.png">
                               <div class="middle">
-                                <div class="text">Price </div>
+                                <div class="text"herf="page2.php">Buy<a  href="page3.php"> </div>
                               </div> 
                             </div>
                             </div> 
@@ -98,19 +98,19 @@
                             <div id="item3 " class="second-item">
                               <img class="image-second" src="images/q5.png">
                               <div class="middle">
-                                <div class="text">Price </div>
+                                <div class="text"  >Buy<a  href="page4.php"></div> 
                               </div> 
                             </div>
                             <div id="item4 " class="second-item">
                               <img class="image-second" src="images/q4.png">
                               <div class="middle">
-                                <div class="text">Price </div>
+                                <div class="text"  herf="page4.php">Buy </div>
                               </div> 
                             </div>
                           </div>
                           
-                        </div>
-                    </div>
+</div>
+</div>
                     <div class="third-container-item">
 
                       <div class="third-info-sales">
@@ -169,7 +169,59 @@
                       
                     </div>
 
-                    <?php include 'footer.php';?>
+                    <footer>
+                      
+                      <div class="footer-elements">
+                        <div class="footer logo">
+                          <img style="width: 150px;height: 150px;" src="images/bagicon.png">
+                    
+                        </div>
+                      <div class="footer explore">
+                        <h2 class="footer-heading" >Explore</h2>
+                        
+                        <ul>
+                        <li> <a href="home.php" >Home</a></li>
+                        <li><a href="productClient.php" >Products</a></li>
+                        <li><a href="aboutUs.php" >About Us</a></li>
+                
+                        </ul>
+                  
+                      </div>
+                      <div class="footer info">
+                        <h2 class="footer-heading">Visit Us</h2>
+                          
+                        <ul>  
+                          <li></i>Autostrada Tiranë - Elbasan, Tiranë</li>
+                          <li></i> Rr. Agim Ramadani, Prishtine</li>
+                          </ul>
+                      </div>
+                          <div class="footer contact">
+                          <h2 class="footer-heading">Contact Us</h2>
+                            <ul>
+                          <li> +355 4 418-640</li>
+                          <li> +383 44 202-472</li>
+                          <li> google@gmail.com</li>
+                         </ul>
+                      </div>
+                        <div class="footer follow">
+                          <h2 class="footer-heading">Follow us</h2>
+                           
+                          <ul>
+                        
+                            <li><i class="fab fa-facebook"></i>Fashion Fab</li>
+                            <li><i class="fab fa-instagram"></i>FashionFab</li>
+                                  
+                          </ul>
+                      </div>
+                  
+                      </div>
+                     <p style="padding-left: 105px; font-weight: bolder;"> @2020 All Right Reserved.</p> 
+                    </div>
+                   
+                    </footer>
+                </div>
+             
+            </div>
       
     </body>
 </html>
