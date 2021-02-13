@@ -10,8 +10,8 @@
       
       <ul>
         
-        <li> <a href="#" >Home</a></li>
-        <li><a href="#" >Products</a></li>
+        <li> <a href="home.php" >Home</a></li>
+        <li><a href="productClient.php" >Products</a></li>
         <li><a href="aboutUs.php" >About Us</a></li>
         
       </ul>
