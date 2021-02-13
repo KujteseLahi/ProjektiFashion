@@ -7,7 +7,7 @@ $produktet = $produkt->getP();
 <html>
     <head>
         <title>FashionGlam</title>
-        <link rel="stylesheet" href="css/page.css">
+        <link rel="stylesheet" href="productClient.css">
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
