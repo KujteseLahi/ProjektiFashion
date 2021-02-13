@@ -1,6 +1,6 @@
 <?php
-include_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti/models/userMapper.php');
-include_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti/models/userModel.php');
+include_once ($_SERVER['DOCUMENT_ROOT'].'/ProjektiF/models/userMapper.php');
+include_once ($_SERVER['DOCUMENT_ROOT'].'/ProjektiF/models/userModel.php');
 class UserController
 {
     public function InsertUser($username,$email, $passwordU, $roli)
