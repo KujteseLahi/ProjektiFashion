@@ -135,7 +135,7 @@ body {
   .hidden {
     display: none;
   }
- #mainForm{
+ .mainForm{
     color: black;
   }
   .form-style {
@@ -157,7 +157,7 @@ body {
     height: 300px;
   }
   .text{
-    margin: 15px 5px 0;
+    margin: 14px 2px 14px;
     padding: 1px 20px;
     background-color: black;
     color: white;
