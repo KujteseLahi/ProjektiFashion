@@ -50,19 +50,18 @@ input {
     color: red;
     font-size: 90%;
 }
-input[type="submit"] {
+.submit {
     width: 50%;
     font-size: 20px;
     background: #1a1b1d;
     color: #fff;
-    margin-top: 10%;
+    margin-top: 10px;
     cursor: pointer;
     border-radius: 30px;
 }
-input[type="submit"]:hover {
+.submit:hover {
     opacity: 0.7;
 }
-
 .body-container{
     display: flex;
     flex-direction: row;
