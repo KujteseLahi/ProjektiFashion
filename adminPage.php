@@ -34,8 +34,8 @@ $produktet = $produkt->getKomentet();
 
 
             <div class="nenmeny">
-                <button class="nmenubtn" type="menu" >Home</button>
-                <button class="nmenubtn" type="menu"onclick="location.href='productForm.php'">Products</button>
+                <button class="nmenubtn" type="menu"onclick="location.href='admin.php.php'" >Home</button>
+                <button class="nmenubtn" type="menu"onclick="location.href='ProductRegister.php'">Products</button>
                 <button class="nmenubtn" type="menu">Product Slider</button>
                 
             </div>
