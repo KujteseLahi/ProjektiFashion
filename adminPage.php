@@ -1,5 +1,5 @@
 <?php
-require_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti/models/insertAboutUs.php');
+require_once ($_SERVER['DOCUMENT_ROOT'].'/ProjektiF/models/insertAboutUs.php');
 $produkt = new InsertView();
 $produktet = $produkt->getKomentet();
 ?>
@@ -10,134 +10,51 @@ $produktet = $produkt->getKomentet();
     <title>Wear-It</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="adminPage.css">
+    <link rel="stylesheet" href="css/adminPage.css">
 
 
 </head>
 
 <body>
-    <div class="upper">
-        <div id="box1">
-            <div class="pocketMarket">
-                <b>Admin Dashboard</b>
-            </div>
+<div class="body">
+          <div class="upper">
+                   <b>Admin Dashboard</b>
+           </div>
 
-        </div>
-
-      
-
-
-    </div>
+    
     <div class="lower">
 
-        <div class="middle">
-
-
             <div class="nenmeny">
-                <button class="nmenubtn" type="menu"onclick="location.href='admin.php.php'" >Home</button>
+                <button class="nmenubtn" type="menu"onclick="location.href='adminPage.php'" >Home</button>
                 <button class="nmenubtn" type="menu"onclick="location.href='ProductRegister.php'">Products</button>
-            
-                
+               
             </div>
-            <body>
+           <div class="main"> 
                 <div class="form-group">
-                    <div class="form-header">
-                        <h2 class ="titulli1">FeedBack Comments</h2>
-                    </div>
-                    <div class="swiper-container">
+                         
+                              <h2 class ="titulli1">FeedBack Comments</h2>
+                          
+                  <div class="swiper-container">
            
-           <div class="swiper-wrapper">
-           
-           <?php foreach($produktet as $produkt):?>
-               <div class="swiper-slide">
+                       <div class="swiper-wrapper">
 
-           
-                   <div class="slider-box">
-                  
-                       <p class="time">New</p>
-                       
+                            <?php foreach($produktet as $produkt):?>
+                                <div class="swiper-slide">
+                                    <div class="slider-box">
+                                          <h3>FeedBack :</H3>
+                                           <p> <?php echo $produkt['Comment'];?></p>
 
-                       <div class="img-box">
-                    
-                         <p> <?php echo $produkt['Comment'];?></p>
-                       
-                     
+                                       
+                                     </div>
+                                 </div>
+                            <?php endforeach; ?>
                        </div>
-                       
-                      
-                      
-                      
-
                    </div>
-                   
-               </div>
-               <?php endforeach; ?>
-           </div>
-                       
-           
-       </div>
-
-
-                </div>
-                </div>
-      
-
-            <footer>
-        
-    
-
-    <div class="footer">
-
-                      
-            <div class="footer-elements">
-              <div class="footer logo">
-                <img  style="width: 150px;height: 150px; padding-top: 20px;" src="bagicon.png">
-          
-              </div>
-            <div class="footer explore">
-              <h2 class="footer-heading" >Explore</h2>
-              
-              <ul>
-              <li><a href="adminPage.php">Home</a></li>
-                <li><a href="ProductAdmin.php">Products</a></li>
-                
-              </ul>
-        
-            </div>
-            <div class="footer info">
-              <h2 class="footer-heading">Visit Us</h2>
-                
-              <ul>  
-                <li></i>Autostrada Tiranë - Elbasan, Tiranë</li>
-                <li></i> Rr. Agim Ramadani, Prishtine</li>
-                </ul>
-            </div>
-                <div class="footer contact">
-                <h2 class="footer-heading">Contact Us</h2>
-                  <ul>
-                <li> +355 4 418-640</li>
-                <li> +383 44 202-472</li>
-                <li> google@gmail.com</li>
-               </ul>
-            </div>
-              <div class="footer follow">
-                <h2 class="footer-heading">Follow us</h2>
-                 
-                <ul>
-              
-                  <li><i class="fab fa-facebook"></i>Fashion Fab</li>
-                  <li><i class="fab fa-instagram"></i>FashionFab</li>
-                        
-                </ul>
-            </div>
-        
-            </div>
-           <p style="padding-left: 105px; font-weight: bolder;"> @2020 All Right Reserved.</p> 
-          </div>
-         
-          </footer>
-      </body>
-
+             </div>
+      </div>
+</div>
+    <?php include 'footer.php';?>
+    </body>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
     <script>
