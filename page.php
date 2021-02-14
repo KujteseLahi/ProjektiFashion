@@ -6,17 +6,7 @@
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
     <body>
-        <div class="navbar">
-           
-            <nav class="stroke">
-              <ul>
-                <li><a href="home.php">Home</a></li>
-                <li><a href="productClient.php">Products</a></li>
-                <li><a href="aboutUs.php">AboutUs</a></li>
-                <li><a href="cart.php"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
-              </ul>
-            </nav>
-          </div>
+       <?php include 'menu.php'?>
           <div class="body">
           <div class="product-details">
           <div class="photos-container">
