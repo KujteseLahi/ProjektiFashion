@@ -25,7 +25,7 @@ class InsertView
 
 echo '<script type="text/javascript">'; 
 echo 'alert("Comment send!");'; 
-echo 'window.location.href = "../home.html";';
+echo 'window.location.href = "../aboutUs.html";';
 echo '</script>';
 
 
@@ -40,7 +40,7 @@ echo '</script>';
 
 echo '<script type="text/javascript">'; 
 echo 'alert("Comment Failed!");'; 
-echo 'window.location.href = "../home.html";';
+echo 'window.location.href = "../aboutUs.html";';
 echo '</script>';
 
 
