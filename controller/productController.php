@@ -1,6 +1,6 @@
 <?php
-include_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti/models/productMapper.php');
-include_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti/models/productModel.php');
+include_once ($_SERVER['DOCUMENT_ROOT'].'/ProjektiF/models/productMapper.php');
+include_once ($_SERVER['DOCUMENT_ROOT'].'/ProjektiF/models/productModel.php');
 class ProductController
 {
     public function InsertProduct($ProductName, $ProductCode, $Producer,$Price,$ProductPicPath)
