@@ -36,7 +36,7 @@ $produktet = $produkt->getKomentet();
             <div class="nenmeny">
                 <button class="nmenubtn" type="menu"onclick="location.href='admin.php.php'" >Home</button>
                 <button class="nmenubtn" type="menu"onclick="location.href='ProductRegister.php'">Products</button>
-                <button class="nmenubtn" type="menu">Product Slider</button>
+            
                 
             </div>
             <body>
@@ -80,14 +80,14 @@ $produktet = $produkt->getKomentet();
 
                 </div>
                 </div>
-            </body>
+      
 
             <footer>
         
     
 
     <div class="footer">
-        <footer>
+
                       
             <div class="footer-elements">
               <div class="footer logo">
@@ -136,7 +136,8 @@ $produktet = $produkt->getKomentet();
           </div>
          
           </footer>
-    </footer>
+      </body>
+
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
     <script>
