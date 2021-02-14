@@ -1,5 +1,5 @@
 <?php
-require_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti/views/insertProductView.php');
+require_once ($_SERVER['DOCUMENT_ROOT'].'/ProjektiF/views/insertProductView.php');
 $produkt = new InsertView();
 $produktet = $produkt->getP();
 ?>
@@ -11,7 +11,7 @@ $produktet = $produkt->getP();
     <title>Wear-It</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="productClient.css">
+    <link rel="stylesheet" href="css/productClient.css">
 
 
 </head>
@@ -37,7 +37,7 @@ $produktet = $produkt->getP();
             <div class="nenmeny">
                 <button class="nmenubtn" type="menu" >Home</button>
                 <button class="nmenubtn" type="menu"onclick="location.href='ProductRegister.php'">Products</button>
-                <button class="nmenubtn" type="menu">Product Slider</button>
+   
                 
             </div>
 
