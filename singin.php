@@ -17,7 +17,7 @@
                  <h2 class="singin">Sing in</h2>
                     <div class="row">
                         <label>Email</label>
-                        <input name = "email" class ="label"  id= "label" name="" type="text"  >
+                        <input name = "username" class ="label"  id= "label" name="" type="text"  >
                         <div class="error" id="usernameErr"></div>
                     </div>
                     <div class="row">
