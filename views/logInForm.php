@@ -10,10 +10,7 @@ if (isset($_POST['logINB'])) {
     $view = new LogInView();
     $view->LogInUserForm($username ,$email, $paswordU,$roliId);
 
-    
-    
 }
-
 
 if (isset($_POST['pass'])) {
     header("Location:../singin.php"); 
@@ -22,12 +19,9 @@ if (isset($_POST['pass'])) {
         
 }
 
-
-
 class LogInView
 {
 
-     
     public function LogInUserForm($username, $email ,$paswordU,$roliId)
     {
         if(!isset($username) || trim($username) == ''  || !isset($paswordU) || trim($paswordU) == '' ) {
