@@ -79,60 +79,7 @@
 .swiper-slide:hover {
     box-shadow: 2px 2px 12px rgba(47, 47, 47, 0.40);
 }
-
-
-
-
-
-
-
-footer{
-
-    background-color: rgb(0, 0, 0);
-    color: black;
-   
-   
-   }
-   .footer-elements{
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
-     flex-wrap: wrap;
-    
-   }
-  
-   ul{
-     line-height: 2.5;
-     margin-top: 10px;
-     
-   }
-   
-   .footer-heading{
-      font-weight: bolder;
-     margin-bottom: 10px;
-     font-size:20;
-   
-     color: white;
-   }
-   .footer-a{
-    color: aliceblue;
-   }
-   ul, li, a{
-     list-style-type: none;
-     text-decoration: none;
-     color: aliceblue;
-     font-size: 14px;
-   }
-   .fa-facebook, .fa-instagram{
-     font-size: 25px;
-     padding-right: 5px;
-     
-     color:rgb(255, 255, 255);
-   }
-   .fa-facebook:hover{color: #bdac9d;}
-   .fa-instagram:hover{color: #bdac9d;}
-  
-   i{
-     padding-right: 5px;
-   }
+.slider-box a{
+ color: gray;
+}
 
