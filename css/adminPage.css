@@ -133,17 +133,7 @@
     }
 }
 
-#photo {
-    width: 40%;
-    height: 60%;
-}
 
-.photos {
-    justify-content: right;
-    flex-direction: row;
-    margin-top: 5%;
-    margin-left: 5%;
-}
 
 .middlepart {
     display: flex;
