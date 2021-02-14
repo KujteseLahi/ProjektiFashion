@@ -63,7 +63,7 @@ div.menu-pane {
   transform: translateX(-105vw);
   transform-origin: (0, 0);
   width: 55vw;
-  height: 76%;
+  height: 70%;
   transition: 0.6s ease-in-out;
 }
 
