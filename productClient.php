@@ -1,5 +1,5 @@
 <?php
-require_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti/views/insertProductView.php');
+require_once ($_SERVER['DOCUMENT_ROOT'].'/ProjektiF/views/insertProductView.php');
 $produkt = new InsertView();
 $produktet = $produkt->getP();
 ?>
