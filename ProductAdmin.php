@@ -82,5 +82,4 @@ $produktet = $produkt->getP();
             errorMessageClass: "error",
         });
     </script>
-
 </html>
