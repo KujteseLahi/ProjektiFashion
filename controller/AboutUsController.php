@@ -1,6 +1,6 @@
 <?php
-include_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti/models/AboutUsMapper.php');
-include_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti/models/AboutUsModel.php');
+include_once ($_SERVER['DOCUMENT_ROOT'].'/ProjektiF/models/AboutUsMapper.php');
+include_once ($_SERVER['DOCUMENT_ROOT'].'/ProjektiF/models/AboutUsModel.php');
 class AboutUsController
 {
     public function InsertKoment($comment)
