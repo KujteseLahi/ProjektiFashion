@@ -1,99 +1,92 @@
+<?php 
+$id=$_GET['id'];
+require_once ($_SERVER['DOCUMENT_ROOT'].'/ProjektiF/views/insertProductView.php');
+$produkt = new InsertView();
+$produktet = $produkt->getP();
+
+//   $servername = 'DESKTOP-G35692C';
+//  $user = 'DesktopUser';
+
+//  $password = '123456';
+//  $databaseName = 'WearFashion';
+
+
+// $connection = new PDO("sqlsrv:Server= $servername ;Database= $databaseName", "$user", "$password");
+
+// $result= $connection->prepare("Select * from Product where id={$id}");
+
+// $return = $connection->prepare("Select * from Product where id={$id}")
+//query
+//return;
+
+?>
+
+
+<!DOCTYPE html>
 <html>
     <head>
-        <title>FashionGlam</title>
-        <link rel="stylesheet" href="css/page.css">
+    
+    <title><?php echo $id; ?></title>
+        <link rel="stylesheet" href="css/page.css?v=<?php echo time(); ?>">
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
     <body>
        <?php include 'menu.php'?>
           <div class="body">
+          <?php for( $i=0; $i < count($produktet);$i++):?>
+         <?php if($produktet[$i]['ProductID'] == $id) :?>
+
+        
           <div class="product-details">
           <div class="photos-container">
-            <div class="small-photos-container">
-              <img class="mini-photo" src="images/q1.png">
-              <img class="mini-photo" src="images/q1.png">
-              <img class="mini-photo"src="images/q1.png">
-              <img class="mini-photo"src="images/q1.png">
-            </div>
+            
             <div class="main-photo-container">
-            <img class="max-photo"src="images/q1.png">
+          
+            
+                                          <?php if($produktet[$i]['ProductPicPath']):?>
+                                            <img class = "imgg"src="<?php echo $produktet[$i]['ProductPicPath'];?>">
+                                          <?php else: ?>
+                                          <p>No image selected</p>
+                                          <?php endif ?>
+            <img class="max-photo"src="">
 
             </div>
           </div>
             <div class="info-container">
             <div class="product-info-details">
-            <p>BLACK BAG IN GOLDEN STONES</p>
-            <p>BLACK - 8741/778</p>
-            <p>€38.99</p>
+
+            <p><?php echo $produktet[$i]['ProductName']?> </p>
+            <p><?php echo $produktet[$i]['ProductCode']?></p>
+            <p><?php echo number_format($produktet[$i]['Price'], 2, '.', ',')?>$</p>
             <p>BLACK </p>
           </div>
-             <div class="sizes">
+          
+          <div class="sizes">
               
-                <h3>Only one size</h3>
-                <div class="labels">
-               
-                <label class="label"><input type="radio" name="select" /><span>M</span></label>
-              
-              </div>
-
+              <h3>Select One</h3>
+              <div class="labels">
+              <label class="label"><input type="radio" name="select" /><span>XS</span></label>
+              <label class="label"><input type="radio" name="select" /><span>S</span></label>
+              <label class="label"><input type="radio" name="select" /><span>M</span></label>
+              <label class="label"><input type="radio" name="select" /><span>L</span></label>
+              <label class="label"><input type="radio" name="select" /><span>XL</span></label>
+              <label class="label"><input type="radio" name="select" /><span>XXL</span></label>
             </div>
+           
+          </div>
+
+            
             <button class="submit-button" type="Submit">ADD TO BAG</button>
             </div>
+           
+           
 
-          
           </div>
-        </div>
-        <footer>
-                      
-          <div class="footer-elements">
-            <div class="footer logo">
-              <img  style="width: 150px;height: 150px;" src="images/bagicon.png">
+          <?php endif; ?>
+          <?php endfor;?>
         
-            </div>
-          <div class="footer explore">
-            <h2 class="footer-heading" >Explore</h2>
-            
-            <ul>
-              
-              <li> <a href="home.php" >Home</a></li>
-              <li><a href="productClient.php" >Products</a></li>
-              <li><a href="aboutUs.php" >About Us</a></li>
-              
-            </ul>
-      
-          </div>
-          <div class="footer info">
-            <h2 class="footer-heading">Visit Us</h2>
-              
-            <ul>  
-              <li></i>Autostrada Tiranë - Elbasan, Tiranë</li>
-              <li></i> Rr. Agim Ramadani, Prishtine</li>
-              </ul>
-          </div>
-              <div class="footer contact">
-              <h2 class="footer-heading">Contact Us</h2>
-                <ul>
-              <li> +355 4 418-640</li>
-              <li> +383 44 202-472</li>
-              <li> google@gmail.com</li>
-             </ul>
-          </div>
-            <div class="footer follow">
-              <h2 class="footer-heading">Follow us</h2>
-               
-              <ul>
-            
-                <li><i class="fab fa-facebook"></i>Fashion Fab</li>
-                <li><i class="fab fa-instagram"></i>FashionFab</li>
-                      
-              </ul>
-          </div>
-      
-          </div>
-         <p style="padding-left: 105px; font-weight: bolder; color: aliceblue;"> @2020 All Right Reserved.</p> 
         </div>
-       
-        </footer>
+       <?php include 'footer.php' ?>
     </body>
 </html>
